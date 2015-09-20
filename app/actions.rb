@@ -28,5 +28,7 @@ end
 
 get '/messages/:id' do
   @message = Message.find params[:id]
+  message_author = @message.author
+  @all_messages = Message.where(author: @message.author).where.not(id: params[:id])
   erb :'messages/show'
 end
