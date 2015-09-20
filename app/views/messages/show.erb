@@ -1,9 +1,8 @@
 <h1>Message from <%= @message.author %></h1>
 </hr>
 
-<p>
-  <%= @message.content  %> <a href="<%= @message.url  %>"><%= @message.url  %></a>
-</p>
+<p><%= @message.content  %> <a href="<%= @message.url  %>"><%= @message.url  %></a></p>
+<p><em><small>posted at <%= @message.created_at  %></small></em></p>
 
 <hr/>
 
