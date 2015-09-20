@@ -1,11 +1,8 @@
 <h1>Message from <%= @message.author %></h1>
 </hr>
-<p>
-  Author: <%= @message.author %>
-</p>
 
 <p>
-  <%= @message.content  %>
+  <%= @message.content  %> <a href="<%= @message.url  %>"><%= @message.url  %></a>
 </p>
 
 <hr/>
